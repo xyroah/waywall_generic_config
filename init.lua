@@ -4,13 +4,13 @@ local main = require("main")
 local remaps = require("remaps")
 
 local cfg = {
-    debug_text = true,
+    debug_text = false,
 
     -- ==== LOOKS ====
     resolution = { 1920, 1080 },
 
     bg_col = "#000000",
-    toggle_bg_picture = false,
+    toggle_bg_picture = true,
     text_col = "#FFFFFF",
     pie_chart_1 = "#EC6E4E",
     pie_chart_2 = "#46CE66",
@@ -31,18 +31,18 @@ local cfg = {
 
 
     -- ==== MIRRORS ====
-    e_count = { enabled = true, x = 1340, y = 300, size = 5, colorkey = false, show_c = false },
+    e_count = { enabled = true, x = 1340, y = 300, size = 5, colorkey = true, show_c = true },
 
-    thin_pie = { enabled = true, x = 1200, y = 400, size = 4, colorkey = false }, -- Turning off colorkeying also maintains the original pie chart's dimensions and shows the percentages
-    tall_pie = { enabled = true, x = 1200, y = 400, size = 4, colorkey = false }, -- Leave same as thin for seamlessness
+    thin_pie = { enabled = true, x = 1200, y = 400, size = 4, colorkey = true }, -- Turning off colorkeying also maintains the original pie chart's dimensions and shows the percentages
+    tall_pie = { enabled = true, x = 1200, y = 400, size = 4, colorkey = true }, -- Leave same as thin for seamlessness
 
-    thin_percent = { enabled = false, x = 1300, y = 850, size = 6 },
-    tall_percent = { enabled = false, x = 1300, y = 850, size = 6 }, -- Leave same as thin for seamlessness
-    percentages_match_text = false,                                  -- Enabling this makes the percentages match the text color rather than the pie colors
+    thin_percent = { enabled = true, x = 1300, y = 850, size = 6 },
+    tall_percent = { enabled = true, x = 1300, y = 850, size = 6 }, -- Leave same as thin for seamlessness
+    percentages_match_text = true,                                  -- Enabling this makes the percentages match the text color rather than the pie colors
 
 
     measuring_window = { x = 30, y = 340, size = 10 },
-    stretched_measure = false,
+    stretched_measure = true,
 
 
     -- ==== MACROS ====
